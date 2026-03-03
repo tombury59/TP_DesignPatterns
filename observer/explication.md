@@ -2,7 +2,7 @@
 ## Observer
 
 ### Problème qu’il résout :
-Le pattern Observer résout le problème de la dépendance entre objets. Il permet à un objet (le Sujet) de notifier un nombre indéterminé d'autres objets (les Observateurs) d'un changement d'état.
+Éviter qu'un objet doive demander sans arrêt aux autres si un changement est effectué. Au lieu que tout le monde harcèle le sujet, c'est le sujet qui prévient tout le monde quand il se passe un truc. Ça découple complètement les objets.
 
 ### Principe de fonctionnement:
 Le pattern repose sur une relation de type "Abonnement" (Publish/Subscribe).
@@ -18,8 +18,9 @@ Le pattern repose sur une relation de type "Abonnement" (Publish/Subscribe).
 
 | <u>Avantages                    | <u>Inconvénients                                                           |  
 |---------------------------------|----------------------------------------------------------------------------|  
-| Contrôle strict de l'instanciation | Peut introduire des problèmes pour tester                                  |  
-| Accès global à l'instance       | Peut masquer des dépendances et rendre le code plus difficile à comprendre |  
+| Tu peux ajouter des abonnés sans jamais toucher au code du Sujet. | Si tu oublies de te désabonner, l'objet reste en mémoire (fuite de mémoire).                                 |  
+| Relation hyper flexible : on s'abonne/désabonne quand on veut.       | L'ordre des notifications n'est pas toujours garanti. |  
 
 ### Cas d’usage réel possible:
-une connexion unique à une base de données SQL
+YouTube : Tu t'abonnes à une chaîne, tu reçois une notif quand une vidéo sort.
+Bourse : Une action change de prix, tous les afficheurs et les bots de trading se mettent à jour.

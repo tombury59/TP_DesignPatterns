@@ -1,0 +1,25 @@
+
+====Singleton => Une unique instance d'objet à la fois
+
+====Factory Method => Crée objets via une usine qui lui seul appelera les logiques adapté
+
+====Composite => Traite objets et collections de la même facon, avec du récursif pour ex calculer total enfant + parent
+
+====Strategy => remplace la logique a la volée
+
+====Observer => système de relation abonnement
+
+====Command => sépare l'objet demande de l'objet action
+
+====State => change le comportement d'un objet en fonction de son état
+
+Abstract Factory
+
+Builder
+
+Adapter
+
+Decorator
+
+Facade
+
