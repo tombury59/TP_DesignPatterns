@@ -1,25 +1,25 @@
 
-====Singleton => Une unique instance d'objet à la fois
+Singleton => Une unique instance d'objet à la fois
 
-====Factory Method => Crée objets via une usine qui lui seul appelera les logiques adapté
+Factory Method => Crée objets via une usine qui lui seul appelera les logiques adapté
 
-====Composite => Traite objets et collections de la même facon, avec du récursif pour ex calculer total enfant + parent
+Composite => Traite objets et collections de la même facon, avec du récursif pour ex calculer total enfant + parent
 
-====Strategy => remplace la logique a la volée
+Strategy => remplace la logique a la volée
 
-====Observer => système de relation abonnement
+Observer => système de relation abonnement
 
-====Command => sépare l'objet demande de l'objet action
+Command => sépare l'objet demande de l'objet action
 
-====State => change le comportement d'un objet en fonction de son état
+State => change le comportement d'un objet en fonction de son état
 
-Abstract Factory
+Decorator => ajoute des fonctionnalités à un objet de manière dynamique
 
-Builder
+Abstract Factory => créer des usines d'usines: créer des familles d'objets qui vont ensemble sans mélanger styles
 
-Adapter
+Builder => créer un objet complexe étape par étape (comme un Lego) pour éviter les constructeurs géants et illisibles.
 
-Decorator
+Adapter => Traducteur: brancher une vieille classe (ou une lib externe) sur ton code moderne sans rien casser.
 
-Facade
+Facade => ==== Facade => C'est le "Bouton Start" d'un système complexe. Elle regroupe plein d'actions internes pour n'en proposer qu'une seule facile au client
 
